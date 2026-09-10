@@ -1,0 +1,5 @@
+order_id,customer_id,amount,status
+1,101,100.00,PAID
+2,102,200.00,PAID
+3,103,175.00,PENDING
+5,105,400.00,PAID

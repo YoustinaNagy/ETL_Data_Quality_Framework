@@ -1,0 +1,19 @@
+# Central configuration for the ETL data-quality framework.
+# This file defines the dataset locations and the validation rules used across the tests.
+# By keeping these values in one place, the framework is easier to adapt for new datasets
+# or production pipelines without duplicating configuration in multiple test files.
+
+app_name: etl-data-quality-framework
+source_path: data/source/orders.csv
+target_path: data/target/orders.csv
+
+# Business key used to match records between source and target systems.
+key_columns:
+  - order_id
+
+# Mandatory fields expected in both source and target datasets.
+required_columns:
+  - order_id
+  - customer_id
+  - amount
+  - status

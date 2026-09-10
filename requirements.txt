@@ -1,0 +1,4 @@
+pyspark==4.0.0
+pytest==8.4.1
+pytest-html==4.1.1
+PyYAML==6.0.2
